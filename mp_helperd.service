@@ -1,0 +1,6 @@
+[Unit]
+Description=MPD helper for batya's player
+After=network.target
+
+[Service]
+Type=exec
