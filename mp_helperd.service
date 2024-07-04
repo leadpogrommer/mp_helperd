@@ -4,3 +4,10 @@ After=network.target
 
 [Service]
 Type=exec
+ExecStart=/home/ilya/mp_helperd/main.py
+Environment=PYTHONUNBUFFERED=1
+# User=mpd
+
+[Install]
+WantedBy=multi-user.target
+
